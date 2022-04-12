@@ -1,0 +1,21 @@
+.body {
+  max-width: 1440;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .body {
+    height: none;
+    display: block;
+    min-width: 375px;
+  }
+}

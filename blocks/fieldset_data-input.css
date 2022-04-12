@@ -1,0 +1,75 @@
+.fieldset_data-input {
+  margin: 45px 0 48px 48px;
+  color: #5e7a7d;
+}
+
+.fieldset__label {
+  margin-bottom: 6px;
+  display: block;
+}
+
+.fieldset__input {
+  border-radius: 5px;
+  border: none;
+  text-align: right;
+  height: 48px;
+  padding: 0 10px 0 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 24px;
+  line-height: 36px;
+  color: #00474b;
+}
+
+.fieldset__input:hover {
+  cursor: pointer;
+}
+
+.fieldset__input:focus {
+  outline-color: #9fe8df;
+}
+
+.fieldset__input_type_bill {
+  background: url(../images/icon-dollar.svg) no-repeat left #f3f9fa;
+  background-position: 10px;
+  margin-bottom: 40px;
+}
+.fieldset__select {
+  width: 100%;
+}
+
+.fieldset__input_type_costom {
+  background: #f3f9fa;
+  padding: 0;
+  text-align: center;
+}
+
+.fieldset__input_type_people {
+  background: url(../images/icon-person.svg) no-repeat left #f3f9fa;
+  background-position: 10px;
+}
+.fieldset__label_people {
+  display: inline;
+  margin-bottom: 6px;
+}
+
+.fieldset__zero-people {
+  float: right;
+  margin-bottom: 6px;
+  color: #e17457;
+}
+
+.fieldset__zero-people_hide {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .fieldset_data-input {
+    margin: 0;
+    padding: 32px;
+    box-sizing: border-box;
+  }
+  .fieldset__input_type_bill {
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body class="body">
+    <main class="main">
+      <form class="form">
+        <fieldset class="fieldset fieldset_data-input">
+          <label for="bill" class="fieldset__label">Bill</label>
+          <input
+            type="number"
+            min="0"
+            placeholder="0"
+            class="fieldset__input fieldset__input_type_bill"
+          />
+            <label for="select-tip" class="fieldset__label"
+            >Select Tip %</label
+          >
+          <div class="btn-group fieldset__select" role="group">          
+            <button type="button" value ="1.05" class="btn">5%</button>
+            <button type="button" value ="1.1" class="btn">10%</button>
+            <button type="button" value ="1.15" class="btn">15%</button>
+            <button type="button" value ="1.25" class="btn">25%</button>
+            <button type="button" value ="1.50" class="btn">50%</button>
+            <button type="button" value ="" class="btn"><input
+                type="number"
+                min="0"
+                placeholder="Costum"
+                class="fieldset__input fieldset__input_type_costom"
+              /></button>
+          </div>
+          <label for="number-of-people" class="fieldset__label fieldset__label_people"
+            >Number of People</label
+          >
+          <span class="fieldset__zero-people fieldset__zero-people_hide">Can't be zero</span>
+          <input
+            type="number"
+            min="0"
+            placeholder="0"
+            class="fieldset__input fieldset__input_type_people"
+          />
+        </fieldset>
+        <fieldset class="fieldset fieldset_data-output">
+          <div class="fieldset__output">
+            <p class="fieldset__title">
+              Tip Amount <span class="fieldset__subtitle">/ person</span>
+            </p>
+            <p class="fieldset__calculate fieldset__calculate_tip">$0.00</p>
+          </div>
+          <div class="fieldset__output">
+            <p class="fieldset__title">
+              Total <span class="fieldset__subtitle">/ person</span>
+            </p>
+            <p class="fieldset__calculate fieldset__calculate_total">$0.00</p>
+          </div>
+          <button type="reset" class="fieldset__reset-button fieldset__reset-button_disabled">reset</button>
+        </fieldset>
+      </form>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

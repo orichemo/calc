@@ -1,0 +1,49 @@
+.btn-group {
+  row-gap: 16px;
+  column-gap: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.btn {
+  color: #fff;
+  background-color: #00474b;
+  max-width: 117px;
+  width: 117px;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.btn:hover {
+  background-color: #9fe8df;
+  cursor: pointer;
+  color: #00474b;
+}
+
+.btn-toggle {
+  color: #00474b;
+  background-color: #9fe8df;
+}
+
+@media screen and (max-width: 700px) {
+  .btn-group {
+    column-gap: 16.56px;
+    max-width: 476px;
+    margin: 0 auto 32px;
+  }
+  .btn {
+    max-width: 146.63px;
+    width: 146.63px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .btn-group {
+    max-width: 310px;
+  }
+}

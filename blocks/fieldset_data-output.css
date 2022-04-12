@@ -1,0 +1,77 @@
+.fieldset_data-output {
+  max-width: 413px;
+  margin: 32px 32px 32px 0;
+  background-color: #00474b;
+  border-radius: 15px;
+  padding: 40px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.fieldset__output {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fieldset__output:last-of-type {
+  margin: 25px 0 122px;
+}
+
+.fieldset__title {
+  margin: 0;
+}
+
+.fieldset__subtitle {
+  display: block;
+  color: #7f9d9f;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.fieldset__calculate {
+  margin: 0;
+  color: #26c2ae;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: -1px;
+  overflow-y: visible;
+}
+
+.fieldset__reset-button {
+  width: 100%;
+  height: 48px;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0;
+  background-color: #26c2ae;
+  color: #00474b;
+  border: none;
+  border-radius: 5px;
+}
+
+.fieldset__reset-button:hover {
+  background-color: #9fe8df;
+  cursor: pointer;
+}
+
+.fieldset__reset-button_disabled {
+  background-color: #0d686d;
+}
+
+.fieldset__reset-button_disabled:hover {
+  background-color: #0d686d;
+  cursor: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .fieldset_data-output {
+    margin: 0 auto;
+    padding: 37px 22px 24px 24px;
+    max-width: calc(100% - 48px);
+  }
+  .fieldset__output:last-of-type {
+    margin: 20px 0 32px;
+  }
+}
